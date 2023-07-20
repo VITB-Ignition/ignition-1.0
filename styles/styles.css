@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&family=Roboto:wght@100;400;500&display=swap');
 
 
 * {
@@ -7,11 +7,12 @@
 }
 
 body {
-    background: rgb(0, 0, 32);
+    background: #1C1C26;
 }
 
 main {
-    height: 100vh;
+    max-height: 100vh;
+    padding: 50px;
 }
 
 .graphic{
@@ -19,17 +20,81 @@ main {
     position: fixed;
     right: clamp(-600px, -65vmax, 0px); 
     top: 0;
+
+    z-index: -1;
 }
 
 .content-section {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: antiquewhite;
 
-    width: 70%;
+    width: 50%;
+    height: 60vh;
 
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    overflow-wrap: break-word;
+
 }
 
 .content-section h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
+
+.content-section h1 {
+    font-size: clamp(2.5rem , 7vw, 10.5rem);
+}
+
+.content-section h3 {
+    font-size: clamp(1rem, 6vw, 10rem);
+}
+
+.content-section h5 {
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+
+.content-section p{
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+    font-weight: 100;
+}
+
+.content-section a {
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: #1C1C26;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.contact-section {
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    width: 50%;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.contact-section a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+
+.contact-section p {
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+
+@media (max-width: 786px) {
+    .content-section, .contact-section {
+        width: 100%;
+        align-items: center;
+    }
+}
+
