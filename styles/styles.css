@@ -205,13 +205,11 @@ p{
     color: #fff;
 }
 
-@media (max-width: 786px) {
-.container{
-    padding: 2rem;
-    padding-bottom: 400px;
-    margin: 0 auto;
-    max-width: 700px;    
-}
+@media (max-width: 600px) {
+    .container, .timeline {
+        width: 100%;
+        align-items: center;
+    }
 }
 
 
