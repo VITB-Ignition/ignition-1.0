@@ -205,4 +205,11 @@ p{
     color: #fff;
 }
 
+@media (max-width: 786px) {
+    .container, .timeline {
+        width: 100%;
+        align-items: center;
+    }
+}
+
 
