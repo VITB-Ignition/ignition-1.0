@@ -7,31 +7,25 @@
 }
 
 body {
-    background: #1C1C26;
+    background: rgb(42, 2, 61) url(../assets/background.png);
     overflow-x: hidden;
     height: 100vh;
 
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
-    max-height: 100vh;
-    padding: 50px;
-}
-
-.graphic{
-    width: 100vmax;
-    position: fixed;
-    right: clamp(-600px, -65vmax, 0px); 
-    top: 0;
-
-    z-index: -1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-section {
     font-family: 'Montserrat', sans-serif;
     color: antiquewhite;
 
-    width: 50%;
+    width: 70%;
     height: 60vh;
 
     display: flex;
@@ -40,6 +34,7 @@ main {
 
     overflow-wrap: break-word;
 
+    padding: 50px;
 }
 
 .content-section h1, h2, h3 {
@@ -48,6 +43,7 @@ main {
 
 .content-section h1 {
     font-size: clamp(2.5rem , 7vw, 10.5rem);
+    text-shadow: 0 0 30px antiquewhite;
 }
 
 .content-section h3 {
@@ -61,6 +57,7 @@ main {
 .content-section p{
     font-size: clamp(0.8rem, 1vw, 1.5rem);
     font-weight: 100;
+    width: 60%;
 }
 
 .content-section a {
@@ -94,16 +91,32 @@ main {
     font-size: clamp(0.8rem, 1vw, 1.5rem);
 }
 
+.timeline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
 @media (max-width: 786px) {
-    .content-section, .contact-section {
+    .contact-section {
         width: 100%;
         align-items: center;
+    }
+
+    .content-section {
+        height: fit-content;
+        padding: 0px;
+    }
+
+    .content-section p {
+        width: 100%;
     }
 }
 
 .container{
     padding: 2rem;
-    padding-bottom: 400px;
     margin: 0 auto;
     max-width: 500px;    
 }
@@ -161,7 +174,7 @@ main {
     min-height: 300px;
 }
 
-.section:nth-child(odd){
+.section:nth-child(2n-1){
     flex-direction: row-reverse;
     transform: translateX(100%);
 }
@@ -205,9 +218,9 @@ p{
     color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
     .container, .timeline {
-        width: 100%;
+        width: 80%;
         align-items: center;
     }
 }

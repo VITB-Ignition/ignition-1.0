@@ -1,0 +1,49 @@
+
+.organizing-commitee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.organizing-commitee .theme-container {
+    gap: 20px;
+}
+
+.organizing-commitee h1 {
+    font-family: 'Montserrat',sans-serif;
+    color: antiquewhite;
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
+    text-align: center;
+}
+
+.organizing-commitee .card {
+    width: 200px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.organizing-commitee .card .card-details {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.organizing-commitee .card img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.organizing-commitee .card h5 {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+.organizing-commitee .card p {
+    padding: 0;
+    margin: 0;
+}

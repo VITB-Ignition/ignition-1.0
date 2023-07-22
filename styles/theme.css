@@ -8,14 +8,21 @@
 
 .theme-container {
     width: 85vw;
-    height: 60vh;
+    min-height: 60vh;
+    height: fit-content;
     opacity: 0.75;
     border-radius: 30px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
     
     background: var(--section-bg) linear-gradient(
         -20deg,
-        #00000000 40%,
+        #00000000 20%,
         #ffffff25);
     backdrop-filter: blur( 30px );
     -webkit-backdrop-filter: blur( 30px );

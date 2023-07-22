@@ -1,0 +1,24 @@
+.graphics {
+    position: absolute;
+    z-index: -1;
+}
+
+.v1 {
+    top: -10%;
+    left: -10%;
+}
+
+.v2 {
+    top: 0;
+    right: 0;
+}
+
+.v3 {
+    bottom: -50%;
+    right: 20%;
+}
+
+.v4 {
+    top: 0;
+    right: 10%;
+}
