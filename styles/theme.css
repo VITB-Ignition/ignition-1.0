@@ -1,0 +1,24 @@
+/* This file contains the theme for the website */
+
+:root {
+    --section-bg: rgba( 3, 3, 3, 0.25 );
+    --section-shadow: rgba( 31, 38, 135, 0.37 );
+    --section-border-color: rgba(255, 255, 255, 0.425);
+}
+
+.theme-container {
+    width: 85vw;
+    height: 60vh;
+    opacity: 0.75;
+    border-radius: 30px;
+
+    
+    background: var(--section-bg) linear-gradient(
+        -20deg,
+        #00000000 40%,
+        #ffffff25);
+    backdrop-filter: blur( 30px );
+    -webkit-backdrop-filter: blur( 30px );
+    border: 1px solid var(--section-border-color);
+    /* box-shadow: 0 8px 20px 0 var(--section-border-color); */
+}
