@@ -223,6 +223,9 @@ p{
         width: 130%;
         align-items: center;
     }
+    .content h2, p{
+        width 110%
+    }
 }
 
 
