@@ -226,6 +226,9 @@ p{
 /*     .content h2, p{
         width 110%
     } */
+    .line{
+        align-items: center;
+    }
 }
 
 
