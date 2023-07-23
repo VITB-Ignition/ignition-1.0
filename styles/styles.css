@@ -134,7 +134,7 @@ main {
 }
 
 .line{
-    position: absolute;
+    position: relative;
     z-index: 2;
     left: calc(50% - 1px);
     width: 2px;
