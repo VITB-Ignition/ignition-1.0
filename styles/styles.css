@@ -220,7 +220,7 @@ p{
 
 @media (max-width: 786px) {
     .container, .timeline {
-        width: 80%;
+        width: 110%;
         align-items: center;
     }
 }
